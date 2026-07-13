@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam | Contact Me</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="left">
+
+            <h3>Hello 👋</h3>
+
+            <h1>It's <span>Shivam</span></h1>
+
+            <h2>Contact Me</h2>
+
+            <p>
+                Have a project in mind or just want to say hello?
+                Feel free to reach out. I'm always excited to connect,
+                collaborate, and build modern web experiences.
+            </p>
+
+            <div class="info">
+
+                <p><i class="fa-solid fa-envelope"></i>
+                    shivameena548744@gmail.com
+                </p>
+
+                <p><i class="fa-solid fa-phone"></i>
+                    +91 8770945374
+                </p>
+
+                <p><i class="fa-solid fa-location-dot"></i>
+                    Madhya Pradesh, India
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="right">
+
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="message">
+                    <i class="fa-solid fa-envelope"></i> Send Message
+                </button>
+                <button class="tab-btn" data-tab="todo">
+                    <i class="fa-solid fa-list-check"></i> To-Do List
+                </button>
+            </div>
+
+            <div class="tab-panel active" id="message-panel">
+
+                <form id="contactForm">
+
+                    <h2>Send Message</h2>
+
+                    <input type="text" id="name" placeholder="Your Name">
+
+                    <input type="email" id="email" placeholder="Your Email">
+
+                    <textarea id="message" rows="6"
+                        placeholder="Write your message..."></textarea>
+
+                    <button type="submit">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        Send Message
+                    </button>
+
+                    <p id="result"></p>
+
+                </form>
+
+            </div>
+
+            <div class="tab-panel" id="todo-panel">
+
+                <h2>To-Do List</h2>
+
+                <form id="todoForm" class="todo-form">
+                    <input type="text" id="todoInput" placeholder="Add a new task...">
+                    <button type="submit">
+                        <i class="fa-solid fa-plus"></i>
+                        Add Task
+                    </button>
+                </form>
+
+                <ul id="todoList" class="todo-list"></ul>
+
+                <p id="todoEmpty" class="todo-empty">No tasks yet. Add one above! 📝</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
